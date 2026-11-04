@@ -1,29 +1,3 @@
-let miraziz = document.querySelector('#miraziz')
-let m23 = document.querySelector('#m23')
-
-let miraziz1 = document.querySelector('#miraziz1')
-let m_1 = document.querySelector('#m_1')
-let m_2 = document.querySelector("#m_2")
-let m_3 = document.querySelector("#m_3")
-let date = new Date()
-
-let anor = document.querySelector('#anor')
-
-let btn = document.querySelectorAll('button')
-let div = document.querySelector('div')
-let footer = document.querySelector('footer')
-let m125 = document.querySelector('#m125')
-let aside = document.querySelector('aside')
-
-m125.onclick = function (){
-   div.style.transform='perspective(500px) translateY(-130px) rotateY(180deg)'
-}
-miraziz.onclick = function (){
-   div.style.transform='perspective(500px) translateY(-130px) rotateY(0deg)'
-}
-m23.onclick = function (){
-   div.style.transform='perspective(500px) translateY(-130px) rotateY(0deg)'
-}
 
 miraziz.onkeyup = function () {
     // m_2.innerHTML=`${miraziz.value}`
@@ -39,22 +13,10 @@ miraziz.onkeyup = function () {
         m_2.innerHTML=`${miraziz.value}`        
     }
 }
-let tbs = document.querySelector('#tbs')
-let kapital = document.querySelector('#kapital')
-let infin = document.querySelector('#infin')
-let agro = document.querySelector('#agro')
-
 
 m_1.innerHTML = `0${date.getMonth() +1 } / ${date.getFullYear() + 3}` 
 // console.log(m50.innerHTML = m85.getFullYear())
 
-m23.onkeyup = function () {
-    m_3.innerHTML=`${m23.value}`
-       
-}
-m125.onkeyup = function () {
-    aside.innerHTML=`${m125.value}`
-}
 
 anor.onclick = function (){
     miraziz1.src='https://api.logobank.uz/media/logos_preview/Anorbank-01.png'
